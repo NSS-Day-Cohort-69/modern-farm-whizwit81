@@ -1,6 +1,14 @@
-export const catalog = (harvestedFood) => {
-for (const foodType of harvestedFood) {
-    
-    
+
+
+
+export const catalog = (harvestedFoodArray) => {
+
+    let htmlString = ""
+
+
+    for (const foodObjects of harvestedFoodArray) {
+
+            htmlString += `<main class = "plant"> ${foodObjects.type}</main>`
 }
+    return htmlString
 }

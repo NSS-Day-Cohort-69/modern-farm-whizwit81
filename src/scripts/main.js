@@ -8,15 +8,31 @@ import { createCorn } from './seeds/corn.js'
 import { plantSeeds } from './tractor.js'
 import { catalog } from './catalog.js'
 import { harvestPlants } from './harvester.js'
+import { createWheat } from './seeds/wheat.js'
+import { createPotato } from './seeds/potato.js'
+import { createSunflower } from './seeds/sunflower.js'
+
+// addPlant works with the seed object as argument: below
+addPlant(createAsparagus())
+addPlant(createCorn())
+addPlant(createPotato()) 
+addPlant(createSoybean())
+addPlant(createSunflower())
+addPlant(createWheat())
+
 
 const yearlyPlan = createPlan()
-const soyBeanSeed = createSoybean()
-const corn = createCorn()
-const asparagusSeed = createAsparagus()
-const plantsArray = usePlants ()
+
+plantSeeds(yearlyPlan)
+
+const plantsArray = usePlants()
 
 
-console.log(plantsArray)
+
+const harvestPlantsArray = harvestPlants(plantsArray)
+
+// catalog returns string
+const finishedCatalog = catalog(harvestPlantsArray)
 
 
 const parentHTMLElement = document.querySelector(".messages")
@@ -24,5 +40,5 @@ const parentHTMLElement = document.querySelector(".messages")
 // Invoke the function that renders the HTML list
 
 
-parentHTMLElement.innerHTML = catalog()
+parentHTMLElement.innerHTML = finishedCatalog
 

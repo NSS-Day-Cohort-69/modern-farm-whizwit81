@@ -16,7 +16,6 @@ export const createPlan = () => {
 
 
 
-
 /*
     This is a generator function used to randomly
     generate crop types to plant in each plot. It

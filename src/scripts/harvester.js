@@ -18,3 +18,4 @@ export const harvestPlants = (plants) => {
     }
     return plantsHarvested
 }
+

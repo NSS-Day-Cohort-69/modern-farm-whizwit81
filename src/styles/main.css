@@ -34,3 +34,19 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darksalmon;
 }
 
+.container{
+    background-color: rgb(238, 226, 197);
+}
+.messages{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.plant {
+    max-width: fit-content;
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 30px;
+    color: black;
+    
+}

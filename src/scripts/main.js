@@ -13,12 +13,6 @@ import { createPotato } from './seeds/potato.js'
 import { createSunflower } from './seeds/sunflower.js'
 
 // addPlant works with the seed object as argument: below
-addPlant(createAsparagus())
-addPlant(createCorn())
-addPlant(createPotato()) 
-addPlant(createSoybean())
-addPlant(createSunflower())
-addPlant(createWheat())
 
 
 const yearlyPlan = createPlan()
